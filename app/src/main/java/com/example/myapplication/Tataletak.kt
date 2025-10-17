@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TataletalColoumn(modifier: Modifier){
+fun TataletalColumn(modifier: Modifier){
     Column(modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)){
         Text(text = "Komponen1")
         Text(text = "Komponen2")
@@ -33,54 +33,3 @@ fun TataletalColoumn(modifier: Modifier){
     }
 }
 
-@Composable
-fun TataletakRow(modifier: Modifier){
-    Row(modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly) {
-        Text(text = "Komponen1")
-        Text(text = "Komponen2")
-        Text(text = "Komponen3")
-        Text(text = "Komponen4")
-    }
-}
-
-@Composable
-fun TataletakBox(modifier: Modifier){
-    Box(
-        modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth(), contentAlignment = Alignment.Center
-    ){
-        Text(text = "Box 1")
-        Text(text = "Column 1")
-        Text(text = "Row 1")
-        Text(text = "Box 2")
-        Text(text = "Column 2")
-    }
-}
-
-@Composable
-fun TataletakColumnRow(modifier: Modifier){
-    Column(){
-        //Baris1
-        Row(modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly){
-            Text(text = "Komponen1Baris1")
-            Text(text = "Komponen2Baris1")
-            Text(text = "Komponen3Baris1")
-        }
-        //Baris2
-        Row(modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly){
-            Text(text = "Komponen1Baris1")
-            Text(text = "Komponen2Baris1")
-            Text(text = "Komponen3Baris1")
-        }
-    }
-}
-
-@Composable
-fun TataletakRowColumn(modifier: Modifier){
-    Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly)
-    //Kolom1
-}
